@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-fhgr
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-777-0075-tenant/ci10t-777-0075-app/devfile-sample-fhgr@sha256:a8d954dad67877a227c6d9a0b1da5a7e3ac3530a765e4267cb0864e791f9168e
+        name: my-nodejs
+        resources: {}
+status: {}
